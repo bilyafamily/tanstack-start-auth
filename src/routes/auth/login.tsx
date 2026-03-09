@@ -41,7 +41,7 @@ function RouteComponent() {
         callbackURL:
           process.env.NODE_ENV === 'development'
             ? 'http://localhost:3000/dashboard'
-            : 'https://support-nmdpra-ui-aecfcnd3fucqakez.westeurope-01.azurewebsites.net/dashboard',
+            : 'https://tanstack-start-auth.appwrite.network/dashboard',
         fetchOptions: {
           onSuccess: () => {
             setIsLoading(false)
@@ -71,7 +71,7 @@ function RouteComponent() {
       callbackURL:
         process.env.NODE_ENV === 'development'
           ? 'http://localhost:3000/dashboard'
-          : 'https://support-nmdpra-ui-aecfcnd3fucqakez.westeurope-01.azurewebsites.net/dashboard',
+          : 'https://tanstack-start-auth.appwrite.network/dashboard',
       fetchOptions: {
         onSuccess: () => {
           // router.navigate({ to: '/dashboard' })
