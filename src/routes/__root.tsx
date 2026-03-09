@@ -31,6 +31,16 @@ export const Route = createRootRoute({
     ],
   }),
   shellComponent: RootDocument,
+  notFoundComponent: () => (
+    <div className="page-wrap py-20 text-center">
+      This page could not be found.
+    </div>
+  ),
+  errorComponent: () => (
+    <div className="page-wrap py-20 text-center">
+      An unexpected error has occurred.
+    </div>
+  ),
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
